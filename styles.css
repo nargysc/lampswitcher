@@ -132,7 +132,6 @@ border-radius: 30px;
     border-radius: 50px;
 }
 
-
 .control {
     display: flex;
     align-items: center;
@@ -169,4 +168,37 @@ border-radius: 30px;
 
 .on {
     opacity: 1;
+}
+
+@media screen and (max-width:600px)  {
+      .component nav ul   {
+        display: none;
+    }
+     button {
+        margin-top: 10px;
+        margin-left: 210px;
+    }
+.text-component {
+    display: none;
+}
+    .sofa {
+        display: none;
+    }
+.lamp-component {
+    margin: 10px;
+    width: 50%;
+    height: 100px;  
+    animation: spin 1700ms infinite;
+    animation-direction: alternate-reverse;
+  
+}
+@keyframes spin {
+  
+    from {transform:rotate(30deg);}
+    to {transform:rotate(-30deg);}
+   
+}
+.light {
+   display:none;
+}
 }
